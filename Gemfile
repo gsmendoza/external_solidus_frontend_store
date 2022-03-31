@@ -59,3 +59,4 @@ gem "solidus_core", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark
 gem "solidus_backend", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark-solidus_frontend-as-deprecated'
 gem "solidus_api", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark-solidus_frontend-as-deprecated'
 gem "solidus_sample", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark-solidus_frontend-as-deprecated'
+gem "solidus_frontend", github: 'gsmendoza/solidus_frontend'

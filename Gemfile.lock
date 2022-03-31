@@ -46,6 +46,21 @@ GIT
     solidus_sample (3.2.0.alpha)
       solidus_core (= 3.2.0.alpha)
 
+GIT
+  remote: https://github.com/gsmendoza/solidus_frontend.git
+  revision: d996288936e7bc60359fedaaa87aba5d8ff01cf1
+  specs:
+    solidus_frontend (3.2.0.alpha)
+      canonical-rails (~> 0.2.10)
+      font-awesome-rails (~> 4.0)
+      jquery-rails
+      kaminari (~> 1.1)
+      responders
+      sassc-rails
+      solidus_api (= 3.2.0.alpha)
+      solidus_core (= 3.2.0.alpha)
+      truncate_html (~> 0.9, >= 0.9.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,6 +142,8 @@ GEM
     builder (3.2.4)
     byebug (11.1.3)
     cancancan (3.3.0)
+    canonical-rails (0.2.14)
+      rails (>= 4.1, <= 7.1)
     capybara (3.36.0)
       addressable
       matrix
@@ -309,6 +326,7 @@ GEM
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.1)
     tilt (2.0.10)
+    truncate_html (0.9.3)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -352,6 +370,7 @@ DEPENDENCIES
   solidus_api!
   solidus_backend!
   solidus_core!
+  solidus_frontend!
   solidus_sample!
   spring
   sqlite3 (~> 1.4)
