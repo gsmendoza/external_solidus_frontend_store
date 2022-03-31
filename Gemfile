@@ -60,3 +60,5 @@ gem "solidus_backend", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-m
 gem "solidus_api", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark-solidus_frontend-as-deprecated'
 gem "solidus_sample", github: 'gsmendoza/solidus', branch: 'gsmendoza/eng-308-mark-solidus_frontend-as-deprecated'
 gem "solidus_frontend", github: 'gsmendoza/solidus_frontend'
+gem 'solidus_auth_devise'
+gem 'solidus_paypal_commerce_platform'

@@ -136,6 +136,7 @@ GEM
       execjs (~> 2)
     awesome_nested_set (3.5.0)
       activerecord (>= 4.0.0, < 7.1)
+    bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -166,6 +167,20 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    deface (1.8.2)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
+    devise (4.8.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+    devise-encryptable (0.2.0)
+      devise (>= 2.1.0)
     discard (1.2.1)
       activerecord (>= 4.2, < 8)
     erubi (1.10.0)
@@ -238,6 +253,11 @@ GEM
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    orm_adapter (0.5.0)
+    paypal-checkout-sdk (1.0.4)
+      paypalhttp (~> 1.0.1)
+    paypalhttp (1.0.1)
+    polyglot (0.3.5)
     public_suffix (4.0.6)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -275,6 +295,7 @@ GEM
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
+    rainbow (3.1.1)
     rake (13.0.6)
     ransack (2.6.0)
       activerecord (>= 6.0.4)
@@ -306,6 +327,22 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    solidus_auth_devise (2.5.4)
+      deface (~> 1.0)
+      devise (~> 4.1)
+      devise-encryptable (= 0.2.0)
+      solidus_core (>= 2.6, < 4)
+      solidus_support (~> 0.5)
+    solidus_paypal_commerce_platform (0.3.2)
+      deface (~> 1.5)
+      paypal-checkout-sdk
+      solidus_core (>= 2.0.0, < 4)
+      solidus_support (>= 0.8.0, < 1)
+      solidus_webhooks (~> 0.2)
+    solidus_support (0.8.1)
+    solidus_webhooks (0.4.0)
+      solidus_core (>= 2.0.0, < 4)
+      solidus_support (~> 0.6)
     spring (4.0.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -332,6 +369,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -368,9 +407,11 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   solidus_api!
+  solidus_auth_devise
   solidus_backend!
   solidus_core!
   solidus_frontend!
+  solidus_paypal_commerce_platform
   solidus_sample!
   spring
   sqlite3 (~> 1.4)
